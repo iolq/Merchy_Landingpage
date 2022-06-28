@@ -134,9 +134,7 @@ const Footer = () => {
                         </FooterCol>
                         <FooterCol>
                             <h4>หลักสูตร</h4>
-                            {/* <li><a href="#"><p>เทคโนโลยี</p></a></li>
-                                <li><a href="#"><p>การเงินการลงทุน</p></a></li>
-                                <li><a href="#"><p>การเป็นผู้ประกอบการ</p></a></li> */}
+
                             <Col><a href="/">เทคโนโลยี</a></Col>
                             <Col><a href="/">การเงินการลงทุน</a></Col>
                             <Col><a href="/">การเป็นผู้ประกอบการ</a></Col>
