@@ -23,16 +23,18 @@ const Row = styled.div`
 
 const Footered = styled.div`
     background-color: #0f0f0f;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Poppins', sans-serif;
 `
 const Col = styled.div`
     display: flex;
 `
 
 const FooterCol = styled.div`
-   padding: 0 10px;
+   padding: 0 150px;
    width: 100%;
-   display: inline-flex;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    h4{
 	font-size: 18px;
 	color: #ffffff;
@@ -118,6 +120,19 @@ const Address = styled.p`
 const Icon = styled.img`
     width: 100%;
 `
+const FooterMiddleColumn = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 15px;
+
+    /* @media(max-width: 768px){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    } */
+
+`
 const Footer = () => {
     return (
         <>
@@ -126,21 +141,23 @@ const Footer = () => {
                     <Row>
                         <FooterCol>
                             <ul>
-                                <WhiteLogo src="/assets/PowerKid Logo White.png" />
+                                <WhiteLogo src="\assets\Logo White text.png" />
                             </ul>
                             <Title>
                                 © 2022 Getto Co. All Rights Reserved.
                             </Title>
                         </FooterCol>
-                        <FooterCol><p>What can we do?</p></FooterCol>
                         <FooterCol>
-                            <p>Partners</p>
+                            <Col>
+                                <FooterMiddleColumn> <p><a>What can we do?</a></p></FooterMiddleColumn>
+                                <FooterMiddleColumn><p><a>Partners</a></p></FooterMiddleColumn>
+                                <FooterMiddleColumn><p><a href="\page\Merchant"></a>Merchant</p></FooterMiddleColumn>
+
+
+                            </Col>
                         </FooterCol>
                         <FooterCol>
-                            <p><a href="/Merchant">Merchant</a></p>
-                        </FooterCol>
-                        <FooterCol>
-                            <p>contact us</p>
+                            <p><a>contact us</a></p>
                         </FooterCol>
                     </Row>
                 </Container>

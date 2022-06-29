@@ -1,5 +1,5 @@
 import NavbarHome from "../component/NavbarHome";
-import Footer from "../component/footer";
+
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -9,16 +9,31 @@ const Container = styled.div`
 `
 const Image = styled.img`
   
-  width: 75%;
+  width: 100%;
 `;
+const DarkBackground = styled.div`
+    background-color: #0f0f0f;
+`
+
 
 function Merchant() {
     return (
-        <div>
-            <NavbarHome />
-            <Container> <Image src="\assets\honey-fangs-ZpZ_YYfQPy4-unsplash.jpg"></Image></Container>
 
-            <Footer />
+        <div>
+            <NavbarHome></NavbarHome>
+            <DarkBackground>
+                <Image src="\assets\honey-fangs-ZpZ_YYfQPy4-unsplash.jpg"></Image>
+                <Container>What is
+                    <div>Merchant?</div>
+                </Container>
+
+                <Image src='\assets\kayle-kaupanger-J8ksCswaBYo-unsplash.jpg'></Image>
+
+            </DarkBackground>
+
+
+
+
         </div>
 
 
