@@ -65,7 +65,8 @@ function NavbarHome() {
                         </Link>
 
                     </li>
-                    <li className='nav-item'>
+                    <li className='nav-item'
+                    >
                         <Link
                             to='/Merchant'
                             className='navhome-links'

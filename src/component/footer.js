@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 
 const Container = styled.div`
@@ -136,7 +137,7 @@ const Footer = () => {
                             <p>Partners</p>
                         </FooterCol>
                         <FooterCol>
-                            <p>Merchant</p>
+                            <p><a href="/Merchant">Merchant</a></p>
                         </FooterCol>
                         <FooterCol>
                             <p>contact us</p>
