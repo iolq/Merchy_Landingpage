@@ -46,7 +46,7 @@ function Navbar() {
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
                         <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                            หน้าหลัก
+                            What can we do?
                         </Link>
                     </li>
                     <li
@@ -59,7 +59,7 @@ function Navbar() {
                             className='nav-links'
                             onClick={closeMobileMenu}
                         >
-                            หลักสูตรของเรา <i className='fas fa-caret-down' />
+                            Partners <i className='fas fa-caret-down' />
                         </Link>
                         {dropdown && <Dropdown />}
                     </li>
@@ -69,7 +69,7 @@ function Navbar() {
                             className='nav-links'
                             onClick={closeMobileMenu}
                         >
-                            ราคา
+                            Merchant
                         </Link>
                     </li>
                     <li className='nav-item'>

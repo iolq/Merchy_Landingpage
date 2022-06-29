@@ -225,19 +225,11 @@ function Home() {
             <NavbarHome />
             <Header>
                 <BannerBg>
-                    <VideoBg autoPlay="autoplay" loop="loop" muted>
-                        <source src="/assets/production ID_4709300.mp4" type="video/mp4" />
-                    </VideoBg>
+
                     <Container>
                         <BannerCon>
                             <BannerText>
-                                <h1>{bannerData.title1}</h1>
-                                <h1>{bannerData.title2}</h1>
-                                <Row>
-                                    <BannerBtn href="/TechCourse">หลักสูตรเทคโนโลยี</BannerBtn>
-                                    <BannerBtn href="/FinanceCourse">หลักสูตรการลงทุน</BannerBtn>
-                                    <BannerBtn href="/EnterpCourse">หลักสูตรการเป็นผู้ประกอบการ</BannerBtn>
-                                </Row>
+
                             </BannerText>
                         </BannerCon>
                     </Container>
@@ -246,9 +238,7 @@ function Home() {
             <Container>
                 <MiddleCon>
                     <MiddleText>
-                        <Row>
-                            <Power>Power</Power><Kid>Kid</Kid><h2> คืออะไร</h2>
-                        </Row>
+
                         <Discript>
                             เพราะเรารู้ดีว่าโลกในศตวรรษที่ 21 มีการเปลี่ยนแปลงอย่างรวดเร็ว เเละมีทักษะใหม่ๆเกิดขึ้นอีกมากมาย เราเรียกทักษะเหล่านั้นว่า "ทักษะเเห่งอนาคต"
                             ซึ่งการเรียนในห้องเรียนเพียงอย่างเดียว อาจไม่ได้สร้างทักษะเเห่งอนาคตให้กับบุตรหลานของท่านอย่างทันท่วงที  ด้วยเหตุนี้เอง Powerkid จึงสร้างหลักสูตรเรียนทักษะแห่งอนาคตทั้งแบบ
@@ -273,7 +263,7 @@ function Home() {
                             รวมถึงการเป็นผู้ประกอบการ คือสิ่งสําคัญ
                         </ContentR>
                         <ContentL>
-                            <img src="/assets/งานออกแบบที่ไม่มีชื่อ (8).png" alt="" />
+
                         </ContentL>
                     </ContentCon>
                 </Container>

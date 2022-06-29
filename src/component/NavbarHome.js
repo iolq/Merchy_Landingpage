@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import Dropdown from './dropdown';
+// import Dropdown from './dropdown';
 import styled from 'styled-components';
+import Merchant from '../page/Merchant';
+
 
 const Logo = styled.img`
   width: 25%;
@@ -46,7 +48,7 @@ function NavbarHome() {
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
                         <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                            หน้าหลัก
+                            What can we do?
                         </Link>
                     </li>
                     <li
@@ -55,44 +57,24 @@ function NavbarHome() {
                         onMouseLeave={onMouseLeave}
                     >
                         <Link
-                            to='/course'
+                            to='/'
                             className='navhome-links'
                             onClick={closeMobileMenu}
                         >
-                            หลักสูตรของเรา <i className='fas fa-caret-down' />
+                            Partners
                         </Link>
-                        {dropdown && <Dropdown />}
+
                     </li>
                     <li className='nav-item'>
                         <Link
-                            to='/cost'
+                            to='/Merchant'
                             className='navhome-links'
                             onClick={closeMobileMenu}
                         >
-                            ราคา
+                            Merchant
                         </Link>
                     </li>
-                    <li className='nav-item'>
-                        <Link
-                            to='/enroll'
-                            className='navhome-links'
-                            onClick={closeMobileMenu}
-                        >
-                            สมัครเรียน
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to='/trial'
-                            className='nav-links-mobile'
-                            onClick={closeMobileMenu}
-                        >
-                            ทดลองเรียนฟรี
-                        </Link>
-                    </li>
-                    <li>
-                        <Button />
-                    </li>
+                    <li> <button>en</button></li>
                 </ul>
             </nav>
         </>

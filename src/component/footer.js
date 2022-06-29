@@ -14,7 +14,7 @@ const Row = styled.div`
 	/* display: flex; */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 0px;
     @media (max-width: 1000px) {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
@@ -25,12 +25,13 @@ const Footered = styled.div`
     font-family: 'Prompt', sans-serif;
 `
 const Col = styled.div`
-    display: block;
+    display: flex;
 `
 
 const FooterCol = styled.div`
    padding: 0 10px;
    width: 100%;
+   display: inline-flex;
    h4{
 	font-size: 18px;
 	color: #ffffff;
@@ -126,44 +127,19 @@ const Footer = () => {
                             <ul>
                                 <WhiteLogo src="/assets/PowerKid Logo White.png" />
                             </ul>
-                            <h4>Empower the Future, Empower your Kid</h4>
                             <Title>
-                                © 2022 The Flash Solution Co., Ltd.
-                                All Rights Reserved.
+                                © 2022 Getto Co. All Rights Reserved.
                             </Title>
                         </FooterCol>
+                        <FooterCol><p>What can we do?</p></FooterCol>
                         <FooterCol>
-                            <h4>หลักสูตร</h4>
-
-                            <Col><a href="/">เทคโนโลยี</a></Col>
-                            <Col><a href="/">การเงินการลงทุน</a></Col>
-                            <Col><a href="/">การเป็นผู้ประกอบการ</a></Col>
-                            <h4><a href="/trial">ทดลองเรียนฟรี</a></h4>
+                            <p>Partners</p>
                         </FooterCol>
                         <FooterCol>
-                            <h4>บทความ</h4>
-
-                            <a href="#">บทความทั่วไป</a>
-                            <ul>
-                            </ul>
-                            <h4>Follow Us</h4>
-                            <SocialLinks href="https://www.facebook.com/PowerkidTH"><Icon src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-1024.png" /></SocialLinks>
-                            <SocialLinks href="https://www.instagram.com/powerkidth/"><Icon src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square2-1024.png" /></SocialLinks>
-                            <SocialLinks href="https://www.tiktok.com/@powerkidth"><Icon src="https://cdn0.iconfinder.com/data/icons/logos-brands-7/512/TikTok_logo_app0-1024.png" /></SocialLinks>
-                            <SocialLinks href="https://line.me/R/ti/p/%40962qgkwm"><Icon src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_5-line-1024.png" /></SocialLinks>
-                            <p>PowerKidTH</p>
+                            <p>Merchant</p>
                         </FooterCol>
                         <FooterCol>
-                            <h4>ปรึกษาการเรียน โทร</h4>
-                            <p>063-2329154 คุณริตา</p>
-                            <p>092-2410241 คุณภาคภูมิ</p>
-                            <h4>ติดต่อเรา</h4>
-                            <Address>
-                                บริษัท เดอะแฟลชโซลูชั่น จำกัด
-                                เลขที่ 401/62 หมู่ 3
-                                ตำบลคูคต อำเภอลำลูกกา
-                                จังหวัดปทุมธานี 12130
-                            </Address>
+                            <p>contact us</p>
                         </FooterCol>
                     </Row>
                 </Container>
