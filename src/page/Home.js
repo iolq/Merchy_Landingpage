@@ -26,6 +26,7 @@ const MiddleCon = styled.div`
 `
 const Bgcolor = styled.div`
     background-color: #FDF7EE;
+    
 `
 const BannerText = styled.div`
     margin-top: 100px;
@@ -81,19 +82,7 @@ const Row = styled.div`
     }
 `
 
-const VideoBg = styled.video`
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    /* width: 100%; */
-    height: inherit;
-    background-size: cover;
-    overflow: hidden;
-    @media screen and (max-width: 480px) {
-        display: flex;
-        flex-direction: column;
-        background-color: #000;
-    }
-`
+
 
 const ContentCon = styled.section`
     display: flex;
@@ -176,8 +165,8 @@ const ImgRow = styled.div`
     align-items: center;
     justify-content: center;
     img{
-        max-width: 15%;
-        margin: 3vh;
+        max-width: 30%;
+        margin: 5vh;
     }
     @media screen and (max-width: 480px) {
         flex-direction: column;
@@ -210,9 +199,19 @@ const CourseCardRow = styled.div`
         }
     }
 `
-
-const CourseCard = styled.a`
-    margin: 1vh;
+const BackgroundImage = styled.div`
+    background-image: url("/assets/Krob.png");
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-size: cover;
+    
+`
+const NotdoneImage = styled.img`
+  
+  border-radius: 30px;
+  margin: 80px;
+  width: 80%;
+ 
 `
 
 const Image = styled.img`
@@ -223,21 +222,25 @@ function Home() {
     return (
         <div>
             <NavbarHome />
-            <Image src="\assets\Krob.png"></Image>
-            <Container>
-                <ContentCon>
-                    <ContentR>
-                        <Power>Beginning of living with sustainablity.</Power>
-                        <p>
-                            We believe that everbody has a potential to make this world better.
-                        </p>
-                    </ContentR>
-                    <ContentL>
-                        <Image src="\assets\Hero.png"></Image>
-                    </ContentL>
-                </ContentCon>
+            <BackgroundImage>
+                <Container>
+                    <ContentCon>
+                        <ContentR>
+                            <Power>Beginning of living with sustainablity.</Power>
+                            <p>
+                                We believe that everbody has a potential to make this world better.
+                            </p>
+                            <BannerBtn>Get started!</BannerBtn>
+                            <BannerBtn>Join our Discord!</BannerBtn>
+                        </ContentR>
+                        <ContentL>
+                            <Image src="\assets\Hero.png"></Image>
+                        </ContentL>
+                    </ContentCon>
 
-            </Container>
+                </Container>
+            </BackgroundImage>
+
 
             <Bgcolor>
                 <Container>
@@ -265,22 +268,20 @@ function Home() {
                             <h2>People who belive in us.</h2>
                         </Row>
                         <ImgRow>
-                            {/* <img src="/assets/โลโก้หน่วยงาน/62b396b6-6c71-4e0f-b8d9-4ae528ef3cc0..jpg" />
-                            <img src="/assets/โลโก้หน่วยงาน/depa-logo.png" />
-                            <img src="/assets/โลโก้หน่วยงาน/Emblem_of_the_Ministry_of_Digital_Economy_and_Society_of_Thailand.png" />
-                            <img src="/assets/โลโก้หน่วยงาน/kris-logo.png" />
-                            <img src="/assets/โลโก้หน่วยงาน/LOGO_NIA.jpeg" />
-                            <img src="/assets/โลโก้หน่วยงาน/StartupThailand logoกลาง.png" />
-                            <img src="/assets/โลโก้หน่วยงาน/sysi.jpeg" />
-                            <img src="/assets/โลโก้หน่วยงาน/สสส.png" /> */}
+                            <img src="/assets/Rectangle 103.png"></img>
+                            <img src="/assets/Rectangle 104.png"></img>
+                            <img src="/assets/Rectangle 105.png"></img>
+                            <img src="/assets/Treechit M..png"></img>
                         </ImgRow>
                     </MiddleText>
                 </MiddleCon>
             </Container>
             <Image src="\assets\Roadmap.png"></Image>
             <Container>
-                <Image src="\assets\tim-mossholder-ZHfFvW2u93U-unsplash.jpg"></Image>
+                <NotdoneImage src="\assets\tim-mossholder-ZHfFvW2u93U-unsplash.jpg"></NotdoneImage>
             </Container>
+
+
 
         </div>
     )
