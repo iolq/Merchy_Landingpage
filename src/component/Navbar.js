@@ -6,7 +6,7 @@ import Dropdown from './dropdown.js';
 import styled from 'styled-components';
 
 const Logo = styled.img`
-  width: 25%;
+  width: 15%;
 `
 
 function Navbar() {
@@ -37,7 +37,7 @@ function Navbar() {
             <nav className='navbar'>
                 <div>
                     <Link to='/' onClick={closeMobileMenu}>
-                        <Logo src='/assets/Logo PowerKid.png'></Logo>
+                        <Logo src='\assets\White Logo.png'></Logo>
                     </Link>
                 </div>
                 <div className='menu-icon' onClick={handleClick}>
@@ -55,43 +55,26 @@ function Navbar() {
                         onMouseLeave={onMouseLeave}
                     >
                         <Link
-                            to='/course'
+                            to='/'
                             className='nav-links'
                             onClick={closeMobileMenu}
                         >
                             Partners <i className='fas fa-caret-down' />
                         </Link>
-                        {dropdown && <Dropdown />}
+
                     </li>
                     <li className='nav-item'>
                         <Link
-                            to='/cost'
+                            to='/'
                             className='nav-links'
                             onClick={closeMobileMenu}
                         >
                             Merchant
                         </Link>
                     </li>
-                    <li className='nav-item'>
-                        <Link
-                            to='/enroll'
-                            className='nav-links'
-                            onClick={closeMobileMenu}
-                        >
-                            สมัครเรียน
-                        </Link>
-                    </li>
+
                     <li>
-                        <Link
-                            to='/trial'
-                            className='nav-links-mobile'
-                            onClick={closeMobileMenu}
-                        >
-                            ทดลองเรียนฟรี
-                        </Link>
-                    </li>
-                    <li>
-                        <Button />
+                        <button>en</button>
                     </li>
                 </ul>
             </nav>

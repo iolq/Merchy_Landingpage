@@ -8,7 +8,7 @@ import Merchant from '../page/Merchant';
 
 
 const Logo = styled.img`
-  width: 25%;
+  width: 15%;
 `
 
 function NavbarHome() {

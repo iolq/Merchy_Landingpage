@@ -209,8 +209,9 @@ const BackgroundImage = styled.div`
 const NotdoneImage = styled.img`
   
   border-radius: 30px;
-  margin: 80px;
-  width: 80%;
+  margin: 100px;
+  margin-left: 0px;
+  width: 100%;
  
 `
 

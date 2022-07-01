@@ -1,4 +1,5 @@
-import NavbarHome from "../component/NavbarHome";
+
+import Navbar from "../component/Navbar";
 
 import styled from "styled-components";
 
@@ -14,17 +15,29 @@ const Image = styled.img`
 const DarkBackground = styled.div`
     background-color: #0f0f0f;
 `
+const WhiteText = styled.div`
+   color: white;
+   font-size: 24px;
+   font-family: 'Poppins';
+   text-align: center;
+`
+const OrangeText = styled.div`
+   color: #FB5607;
+   font-size: 48px;
+   font-family: 'Poppins';
+   text-align: center;
+`
 
 
 function Merchant() {
     return (
 
         <div>
-            <NavbarHome></NavbarHome>
+            <Navbar></Navbar>
             <DarkBackground>
                 <Image src="\assets\honey-fangs-ZpZ_YYfQPy4-unsplash.jpg"></Image>
-                <Container>What is
-                    <div>Merchant?</div>
+                <Container><WhiteText>What is</WhiteText>
+                    <OrangeText>Merchant?</OrangeText>
                 </Container>
 
                 <Image src='\assets\kayle-kaupanger-J8ksCswaBYo-unsplash.jpg'></Image>
