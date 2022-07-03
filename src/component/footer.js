@@ -90,36 +90,19 @@ const FooterCol = styled.div`
     } */
 `
 
-const SocialLinks = styled.a`
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-    a:hover{
-	color: #E85137;
-	background-color: #ffffff;
-}
-`
+
 const WhiteLogo = styled.img`
     width: 75%;
 `
 
 const Title = styled.p`
     font-size: 14px;
-    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'Poppins';
+    font-style: normal;
     color: #FFF;
 `
-const Address = styled.p`
-    font-family: 'Bai Jamjuree', sans-serif;
-`
-const Icon = styled.img`
-    width: 100%;
-`
+
+
 const FooterMiddleColumn = styled.div`
     display: flex;
     flex-direction: row;
@@ -133,6 +116,22 @@ const FooterMiddleColumn = styled.div`
     } */
 
 `
+const ImgRow = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        max-width: 10%;
+        margin: 1.5vh;
+    }
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        img{
+            max-width: 50%;
+        }
+    }
+`
+
 const Footer = () => {
     return (
         <>
@@ -158,6 +157,12 @@ const Footer = () => {
                         </FooterCol>
                         <FooterCol>
                             <p><a>contact us</a></p>
+                            <ImgRow>
+                                <img src="/assets/Vector (3).png"></img>
+                                <img src="/assets/Vector (1).png"></img>
+                                <img src="/assets/Vector (2).png"></img>
+                                <img src="/assets/Discord New.png"></img>
+                            </ImgRow>
                         </FooterCol>
                     </Row>
                 </Container>

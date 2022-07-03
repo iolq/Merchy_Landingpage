@@ -8,6 +8,22 @@ import styled from 'styled-components';
 const Logo = styled.img`
   width: 15%;
 `
+const EnButton = styled.a`
+     font-family: 'Poppins';
+    font-style: normal;
+    background: transparent;
+    display: inline-block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: #FB5607;
+    border: 1px solid ;
+    transition: 0.3s;
+    margin-top: 1rem;
+    border-radius: 10px;
+    
+    cursor: pointer;
+   
+`
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -65,7 +81,7 @@ function Navbar() {
                     </li>
                     <li className='nav-item'>
                         <Link
-                            to='/'
+                            to='/Merchant'
                             className='nav-links'
                             onClick={closeMobileMenu}
                         >
@@ -73,9 +89,7 @@ function Navbar() {
                         </Link>
                     </li>
 
-                    <li>
-                        <button>en</button>
-                    </li>
+                    <EnButton>EN</EnButton>
                 </ul>
             </nav>
         </>

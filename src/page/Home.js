@@ -56,7 +56,7 @@ const MiddleText = styled.div`
     }
 `
 const BannerBtn = styled.a`
-    background: #2B39AF;
+    background: #FB5607;
     display: inline-block;
     padding: .5rem 1rem;
     text-decoration: none;
@@ -64,8 +64,8 @@ const BannerBtn = styled.a`
     border: 2px solid transparent;
     transition: 0.3s;
     margin-top: 1rem;
-    border-radius: 30px;
-    text-transform: uppercase;
+    border-radius: 10px;
+    
     cursor: pointer;
     &:hover {
         /* border: 2px solid #fff; */
@@ -102,7 +102,7 @@ const ContentCon = styled.section`
 `
 
 const ContentL = styled.div`
-padding: 2rem ;
+padding: 1rem ;
 align-items: center;
 justify-content: center;
 text-align: center;
@@ -117,10 +117,10 @@ img{
 `
 
 const ContentR = styled.div`
-    padding: 2rem ;
+    padding: 1rem ;
     text-align: center;
     justify-content: center;
-    width: 85%;
+    width: 40%;
     font-family: 'bai jamjuree';
     h1, h2{
         font-family: 'Prompt';
@@ -133,40 +133,30 @@ const ContentR = styled.div`
 const Power = styled.h2`
     color: #2B39AF;
 `
-const Kid = styled.h2`
-    color: #F48C06;
-`
-const Discript = styled.div`
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Bai Jamjuree';
-`
-const TrialBtn = styled.a`
-    font-family: 'Prompt';
-    background: #E85137;
+
+const JoinDiscordBtn = styled.a`
+    font-family: 'Poppins';
+    font-style: normal;
+    background: transparent;
     display: inline-block;
     padding: .5rem 1rem;
     text-decoration: none;
-    color: #fff;
-    border: 2px solid transparent;
+    color: #FB5607;
+    border: 1px solid ;
     transition: 0.3s;
     margin-top: 1rem;
-    border-radius: 30px;
-    text-transform: uppercase;
+    border-radius: 10px;
+    
     cursor: pointer;
-    &:hover {
-        /* border: 2px solid #fff; */
-        background: #2B39AF;
-        color: #fff;
-}
+   
 `
 const ImgRow = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     img{
-        max-width: 30%;
-        margin: 5vh;
+        max-width: 34%;
+        margin: 3vh;
     }
     @media screen and (max-width: 480px) {
         flex-direction: column;
@@ -206,13 +196,33 @@ const BackgroundImage = styled.div`
     background-size: cover;
     
 `
-const NotdoneImage = styled.img`
-  
+const NotdoneImage = styled.div`
+   background-image: url("/assets/tim-mossholder-ZHfFvW2u93U-unsplash.jpg");
+   background-repeat: no-repeat;
+    
+  background-size: cover;
   border-radius: 30px;
   margin: 100px;
   margin-left: 0px;
+  
   width: 100%;
  
+`
+const WhiteText = styled.div`
+   color: white;
+   font-size: 24px;
+   font-family: 'Poppins';
+   text-align: center;
+`
+const OrangeText = styled.div`
+   color: #FB5607;
+   font-size: 48px;
+   font-family: 'Poppins';
+   text-align: center;
+`
+
+const PaddingText = styled.div`
+   padding: 120px;
 `
 
 const Image = styled.img`
@@ -232,7 +242,7 @@ function Home() {
                                 We believe that everbody has a potential to make this world better.
                             </p>
                             <BannerBtn>Get started!</BannerBtn>
-                            <BannerBtn>Join our Discord!</BannerBtn>
+                            <JoinDiscordBtn>Join our Discord!</JoinDiscordBtn>
                         </ContentR>
                         <ContentL>
                             <Image src="\assets\Hero.png"></Image>
@@ -247,9 +257,11 @@ function Home() {
                 <Container>
 
 
+                    <PaddingText>  <Power>What is Merchy ?</Power>
+                        <p>Getto is a startup, founded by passionate university students.
+                            We are aiming to help local businesses and environmental issues,
+                            therefore every product from us must contain these.</p></PaddingText>
 
-                    <Power>What is Merchy ?</Power>
-                    <p>Getto is a startup, founded by passionate university students. We are aiming to help local businesses and environmental issues, therefore every product from us must contain these.</p>
 
 
 
@@ -279,7 +291,11 @@ function Home() {
             </Container>
             <Image src="\assets\Roadmap.png"></Image>
             <Container>
-                <NotdoneImage src="\assets\tim-mossholder-ZHfFvW2u93U-unsplash.jpg"></NotdoneImage>
+                <NotdoneImage><OrangeText>We're not done yet...</OrangeText>
+                    <WhiteText>Merchant</WhiteText>
+                    <WhiteText>is coming soon</WhiteText>
+                    <WhiteText>Learn more! {'>'}</WhiteText></NotdoneImage>
+
             </Container>
 
 
