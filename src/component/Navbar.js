@@ -9,8 +9,7 @@ const Logo = styled.img`
   width: 15%;
 `
 const EnButton = styled.a`
-     font-family: 'Poppins';
-    font-style: normal;
+    font-family: 'Poppins', sans-serif;
     background: transparent;
     display: inline-block;
     padding: .5rem 1rem;

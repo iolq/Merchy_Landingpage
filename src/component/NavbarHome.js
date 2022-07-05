@@ -11,7 +11,7 @@ const Logo = styled.img`
   width: 15%;
 `
 const EnButton = styled.a`
-     font-family: 'Poppins';
+     font-family: 'Poppins', sans-serif;
     font-style: normal;
     background: transparent;
     display: inline-block;

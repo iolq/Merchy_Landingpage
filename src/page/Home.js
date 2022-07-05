@@ -41,7 +41,7 @@ const BannerText = styled.div`
 
 const MiddleText = styled.div`
     text-align: center;
-    font-family: 'Prompt';
+    font-family: 'Poppins', sans-serif;
     h1{
         color: #2B39AF;
         top: 10vh;
@@ -108,7 +108,7 @@ justify-content: center;
 text-align: center;
 width: 85%;
     h1, h2{
-        font-family: 'Prompt';
+        font-family: 'Poppins', sans-serif;;
     }
 img{
     width: 90%;
@@ -121,9 +121,9 @@ const ContentR = styled.div`
     text-align: center;
     justify-content: center;
     width: 40%;
-    font-family: 'bai jamjuree';
+    font-family: 'Poppins', sans-serif;;
     h1, h2{
-        font-family: 'Prompt';
+        font-family: 'Poppins', sans-serif;;
     }
     img{
     width: 90%;
@@ -135,7 +135,7 @@ const Power = styled.h2`
 `
 
 const JoinDiscordBtn = styled.a`
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     background: transparent;
     display: inline-block;
@@ -211,13 +211,13 @@ const NotdoneImage = styled.div`
 const WhiteText = styled.div`
    color: white;
    font-size: 24px;
-   font-family: 'Poppins';
+   font-family: 'Poppins', sans-serif;
    text-align: center;
 `
 const OrangeText = styled.div`
    color: #FB5607;
    font-size: 48px;
-   font-family: 'Poppins';
+   font-family: 'Poppins', sans-serif;
    text-align: center;
 `
 

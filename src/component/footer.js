@@ -97,7 +97,7 @@ const WhiteLogo = styled.img`
 
 const Title = styled.p`
     font-size: 14px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     color: #FFF;
 `
