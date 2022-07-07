@@ -8,16 +8,23 @@ import styled from 'styled-components';
 const Logo = styled.img`
   width: 15%;
 `
+const WhiteText = styled.div`
+   color: white;
+   font-size: 16px;
+   font-family: 'Poppins', sans-serif;
+   text-align: center;
+`
 const EnButton = styled.a`
-    font-family: 'Poppins', sans-serif;
+     font-family: 'Poppins', sans-serif;
+    font-style: normal;
     background: transparent;
     display: inline-block;
     padding: .5rem 1rem;
     text-decoration: none;
     color: #FB5607;
-    border: 1px solid ;
+    border: 2px solid ;
     transition: 0.3s;
-    margin-top: 1rem;
+    margin-top: 2rem;
     border-radius: 10px;
     
     cursor: pointer;
@@ -61,7 +68,7 @@ function Navbar() {
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
                         <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                            What can we do?
+                            <WhiteText>What can we do?</WhiteText>
                         </Link>
                     </li>
                     <li
@@ -74,7 +81,7 @@ function Navbar() {
                             className='nav-links'
                             onClick={closeMobileMenu}
                         >
-                            Partners <i className='fas fa-caret-down' />
+                            <WhiteText>Partners</WhiteText> <i className='fas fa-caret-down' />
                         </Link>
 
                     </li>
@@ -84,7 +91,7 @@ function Navbar() {
                             className='nav-links'
                             onClick={closeMobileMenu}
                         >
-                            Merchant
+                            <WhiteText>Merchant</WhiteText>
                         </Link>
                     </li>
 

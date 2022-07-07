@@ -31,7 +31,7 @@ const Col = styled.div`
 
 const FooterCol = styled.div`
    padding: 0 150px;
-   width: 100%;
+   width: 115%;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -156,7 +156,7 @@ const Footer = () => {
                             </Col>
                         </FooterCol>
                         <FooterCol>
-                            <p><a>contact us</a></p>
+                            <p><a>Contact us</a></p>
                             <ImgRow>
                                 <img src="/assets/Vector (3).png"></img>
                                 <img src="/assets/Vector (1).png"></img>

@@ -1,11 +1,12 @@
 import NavbarHome from "../component/NavbarHome";
 import styled from "styled-components";
+import Slider from "../component/Slider";
 
 const Header = styled.div`
     font-family: 'Prompt';
 `
 const Container = styled.div`
-    max-width: 960px;
+    max-width: 1000px;
     margin: 0 auto;
     justify-content: center;
 `
@@ -88,10 +89,10 @@ const ContentCon = styled.section`
     display: flex;
     justify-content: space-between;
     &:first-child{
-        padding: 5rem 0;
+        padding: 10rem 0;
     }
     &:last-child{
-        padding: 5rem 0;
+        padding: 10rem 0;
     }
     @media screen and (max-width: 480px) {
         flex-direction: column;
@@ -102,7 +103,7 @@ const ContentCon = styled.section`
 `
 
 const ContentL = styled.div`
-padding: 1rem ;
+
 align-items: center;
 justify-content: center;
 text-align: center;
@@ -117,10 +118,10 @@ img{
 `
 
 const ContentR = styled.div`
-    padding: 1rem ;
+    
     text-align: center;
     justify-content: center;
-    width: 40%;
+    width: 85%;
     font-family: 'Poppins', sans-serif;;
     h1, h2{
         font-family: 'Poppins', sans-serif;;
@@ -220,6 +221,31 @@ const OrangeText = styled.div`
    font-family: 'Poppins', sans-serif;
    text-align: center;
 `
+const BlackText = styled.h2`
+   color: #0f0f0f;
+   font-size: 20px;
+   font-family: 'Poppins';
+   text-align: center;
+`
+const Beginning = styled.h1`
+   color: #0f0f0f;
+   font-size: 52px;
+   font-family: 'Poppins';
+   text-align: center;
+`
+const Living = styled.h1`
+   color: #FB5607;
+   font-size: 52px;
+   font-family: 'Poppins';
+   text-align: center;
+`
+const MerchyText = styled.h2`
+   color: #fb5607;
+   font-size: 20px;
+   font-family: 'Poppins';
+   text-align: center;
+`
+
 
 const PaddingText = styled.div`
    padding: 120px;
@@ -237,7 +263,8 @@ function Home() {
                 <Container>
                     <ContentCon>
                         <ContentR>
-                            <Power>Beginning of living with sustainablity.</Power>
+                            <Row><Beginning>Beginning of</Beginning><Living>living</Living></Row>
+                            <Living> with sustainablity.</Living>
                             <p>
                                 We believe that everbody has a potential to make this world better.
                             </p>
@@ -257,7 +284,9 @@ function Home() {
                 <Container>
 
 
-                    <PaddingText>  <Power>What is Merchy ?</Power>
+                    <PaddingText>
+
+                        <ContentR><Row><BlackText>What is</BlackText><MerchyText>Merchy</MerchyText><BlackText>?</BlackText></Row></ContentR>
                         <p>Getto is a startup, founded by passionate university students.
                             We are aiming to help local businesses and environmental issues,
                             therefore every product from us must contain these.</p></PaddingText>
@@ -268,6 +297,9 @@ function Home() {
 
                 </Container>
             </Bgcolor>
+
+            <Slider></Slider>
+
             <Container>
 
 

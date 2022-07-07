@@ -33,12 +33,14 @@
     color: #2B39AF;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    margin: 3rem;
   }
   
   .navhome-links {
     color: #0f0f0f;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
+    margin: 3rem;
   }
   
   .nav-links:hover {

@@ -18,9 +18,9 @@ const EnButton = styled.a`
     padding: .5rem 1rem;
     text-decoration: none;
     color: #FB5607;
-    border: 1px solid ;
+    border: 2px solid ;
     transition: 0.3s;
-    margin-top: 1rem;
+    margin-top: 2rem;
     border-radius: 10px;
     
     cursor: pointer;
@@ -63,7 +63,7 @@ function NavbarHome() {
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/' className='navhome-links' onClick={closeMobileMenu}>
                             What can we do?
                         </Link>
                     </li>
