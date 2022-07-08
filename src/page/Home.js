@@ -59,7 +59,7 @@ const MiddleText = styled.div`
 const BannerBtn = styled.a`
     background: #FB5607;
     display: inline-block;
-    padding: .5rem 1rem;
+    padding: .5rem 3rem;
     text-decoration: none;
     color: #fff;
     border: 2px solid transparent;
@@ -140,12 +140,13 @@ const JoinDiscordBtn = styled.a`
     font-style: normal;
     background: transparent;
     display: inline-block;
-    padding: .5rem 1rem;
+    padding: .5rem 3rem;
     text-decoration: none;
     color: #FB5607;
-    border: 1px solid ;
+    border: 2px solid ;
     transition: 0.3s;
     margin-top: 1rem;
+    margin-left: 2rem;
     border-radius: 10px;
     
     cursor: pointer;
@@ -220,6 +221,7 @@ const OrangeText = styled.div`
    font-size: 48px;
    font-family: 'Poppins', sans-serif;
    text-align: center;
+ 
 `
 const BlackText = styled.h2`
    color: #0f0f0f;
@@ -244,6 +246,8 @@ const MerchyText = styled.h2`
    font-size: 20px;
    font-family: 'Poppins';
    text-align: center;
+   margin-left: 3px;
+   margin-right: 3px;
 `
 
 

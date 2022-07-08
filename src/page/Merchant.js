@@ -19,12 +19,13 @@ const JoinDiscordBtn = styled.a`
     font-family: 'Poppins', sans-serif;;
     background: transparent;
     display: inline-block;
-    padding: .5rem 1rem;
+    padding: .5rem 3rem;
     text-decoration: none;
     color: #FB5607;
     border: 1px solid ;
     transition: 0.3s;
     margin-top: 1rem;
+    margin-left: 1rem;
     border-radius: 10px;
     
     cursor: pointer;
@@ -33,7 +34,7 @@ const JoinDiscordBtn = styled.a`
 const BannerBtn = styled.a`
     background: #FB5607;
     display: inline-block;
-    padding: .5rem 1rem;
+    padding: .5rem 3rem;
     text-decoration: none;
     color: #fff;
     border: 2px solid transparent;
@@ -65,7 +66,7 @@ const ContentCon = styled.section`
   }
 `
 const ContentL = styled.div`
-padding: 10rem ;
+padding: 1rem ;
 align-items: center;
 justify-content: center;
 text-align: center;
@@ -74,7 +75,7 @@ width: 85%;
         font-family: 'Poppins', sans-serif;;
     }
 img{
-    width: 90%;
+    width: 100%;
     border-radius: 10px;
 }
 `
@@ -129,9 +130,29 @@ const PaddingText = styled.div`
 const MerchyLogo = styled.img`
 
 max-width: 20%;
+padding-right: 3px;
+margin: auto;
 `
-
-
+const MerchantText = styled.h1`
+   color: #fff;
+   font-size: 52px;
+   font-family: 'Poppins';
+   text-align: center;
+`
+const Row = styled.div`
+    display: flex;
+    justify-content: left;
+    @media screen and (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+    }
+`
+const SmallWhiteText = styled.div`
+color: white;
+font-size: 16px;
+font-family: 'Poppins', sans-serif;;
+text-align: center;
+`
 function Merchant() {
     return (
 
@@ -140,9 +161,11 @@ function Merchant() {
             <DarkBackground>
                 <BackgroundImage><ContentCon>
                     <ContentR>
-                        <MerchyLogo src="/assets/Logo White text.png"></MerchyLogo>
-                        <Power>Beginning of living with sustainablity.</Power>
-                        <WhiteText>Support beginning of living with sustainablity and grow together. Are comming soon!</WhiteText>
+                        <Row><MerchyLogo src="/assets/Logo White text.png"></MerchyLogo>
+                            <OrangeText>for</OrangeText></Row>
+                        <MerchantText>Merchant</MerchantText>
+                        <WhiteText>Support beginning of living with sustainablity and grow together.</WhiteText>
+                        <OrangeText>Are comming soon!</OrangeText>
 
                         <BannerBtn>Pre-register!</BannerBtn>
                         <JoinDiscordBtn>Join our Discord!</JoinDiscordBtn>
@@ -158,15 +181,14 @@ function Merchant() {
 
                 <OpenAreaMarketBG><ContentCon>
                     <ContentR>
-                        <MerchyLogo src="/assets/Logo White text.png"></MerchyLogo>
-                        <Power>Beginning of living with sustainablity.</Power>
-                        <WhiteText>Support beginning of living with sustainablity and grow together. Are comming soon!</WhiteText>
-
+                        <Row><MerchyLogo src="/assets/Logo White text.png"></MerchyLogo>
+                            <OrangeText>for</OrangeText></Row>
+                        <MerchantText>Merchant</MerchantText>
 
 
                     </ContentR>
                     <ContentL>
-                        <WhiteText>A wallet and platform to connect with Merchy to help local shop in the local area through quests, events, and ranking then earn the cryptocurrency for using by be our partners. You can be our partner easily! Just pre-register with us.</WhiteText>
+                        <SmallWhiteText>A wallet and platform to connect with Merchy to help local shop in the local area through quests, events, and ranking then earn the cryptocurrency for using by be our partners. You can be our partner easily! Just pre-register with us.</SmallWhiteText>
                     </ContentL>
                 </ContentCon><BannerBtn>Pre-register!</BannerBtn>
                 </OpenAreaMarketBG>
