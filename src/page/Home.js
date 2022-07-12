@@ -76,7 +76,7 @@ const BannerBtn = styled.a`
 `
 const Row = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: left;
     @media screen and (max-width: 480px) {
         display: flex;
         flex-direction: column;
@@ -146,7 +146,7 @@ const JoinDiscordBtn = styled.a`
     border: 2px solid ;
     transition: 0.3s;
     margin-top: 1rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     border-radius: 10px;
     
     cursor: pointer;
@@ -220,7 +220,7 @@ const OrangeText = styled.div`
    color: #FB5607;
    font-size: 48px;
    font-family: 'Poppins', sans-serif;
-   text-align: center;
+   text-align: left;
  
 `
 const BlackText = styled.h2`
@@ -239,7 +239,7 @@ const Living = styled.h1`
    color: #FB5607;
    font-size: 52px;
    font-family: 'Poppins';
-   text-align: center;
+   text-align: left;
 `
 const MerchyText = styled.h2`
    color: #fb5607;
@@ -249,7 +249,12 @@ const MerchyText = styled.h2`
    margin-left: 3px;
    margin-right: 3px;
 `
-
+const Text = styled.div`
+   color: #575757;
+   font-size: 18px;
+   font-family: 'Poppins';
+   text-align: left;
+`
 
 const PaddingText = styled.div`
    padding: 120px;
@@ -269,9 +274,9 @@ function Home() {
                         <ContentR>
                             <Row><Beginning>Beginning of</Beginning><Living>living</Living></Row>
                             <Living> with sustainablity.</Living>
-                            <p>
-                                We believe that everbody has a potential to make this world better.
-                            </p>
+                            <Text>We believe that everbody has a potential to make this world better.</Text>
+
+
                             <BannerBtn>Get started!</BannerBtn>
                             <JoinDiscordBtn>Join our Discord!</JoinDiscordBtn>
                         </ContentR>
@@ -290,10 +295,10 @@ function Home() {
 
                     <PaddingText>
 
-                        <ContentR><Row><BlackText>What is</BlackText><MerchyText>Merchy</MerchyText><BlackText>?</BlackText></Row></ContentR>
-                        <p>Getto is a startup, founded by passionate university students.
+                        <Row><BlackText>What is</BlackText><MerchyText>Merchy</MerchyText><BlackText>?</BlackText></Row>
+                        <Text>Getto is a startup, founded by passionate university students.
                             We are aiming to help local businesses and environmental issues,
-                            therefore every product from us must contain these.</p></PaddingText>
+                            therefore every product from us must contain these.</Text></PaddingText>
 
 
 
@@ -313,9 +318,9 @@ function Home() {
 
                 <MiddleCon>
                     <MiddleText>
-                        <Row>
-                            <h2>People who belive in us.</h2>
-                        </Row>
+
+                        <h2>People who belive in us.</h2>
+
                         <ImgRow>
                             <img src="/assets/Rectangle 103.png"></img>
                             <img src="/assets/Rectangle 104.png"></img>
@@ -327,9 +332,9 @@ function Home() {
             </Container>
             <Image src="\assets\Roadmap.png"></Image>
             <Container>
-                <NotdoneImage><OrangeText>We're not done yet...</OrangeText>
+                <NotdoneImage><PaddingText><OrangeText>We're not done yet...</OrangeText>
                     <WhiteText>Merchant</WhiteText>
-                    <WhiteText>is coming soon</WhiteText>
+                    <WhiteText>is coming soon</WhiteText></PaddingText>
                     <WhiteText>Learn more! {'>'}</WhiteText></NotdoneImage>
 
             </Container>

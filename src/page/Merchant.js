@@ -16,7 +16,7 @@ const DarkBackground = styled.div`
     background-color: #0f0f0f;
 `
 const JoinDiscordBtn = styled.a`
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
     background: transparent;
     display: inline-block;
     padding: .5rem 3rem;
@@ -26,7 +26,7 @@ const JoinDiscordBtn = styled.a`
     transition: 0.3s;
     margin-top: 1rem;
     margin-left: 1rem;
-    border-radius: 10px;
+    border-radius: 12px;
     
     cursor: pointer;
    
@@ -40,7 +40,7 @@ const BannerBtn = styled.a`
     border: 2px solid transparent;
     transition: 0.3s;
     margin-top: 1rem;
-    border-radius: 10px;
+    border-radius: 12px;
     
     cursor: pointer;
     &:hover {
@@ -72,7 +72,7 @@ justify-content: center;
 text-align: center;
 width: 85%;
     h1, h2{
-        font-family: 'Poppins', sans-serif;;
+        font-family: 'Poppins', sans-serif;
     }
 img{
     width: 100%;
@@ -87,19 +87,25 @@ const ContentR = styled.div`
     width: 85%;
     font-family: 'Poppins', sans-serif;
     h1, h2{
-        font-family: 'Poppins', sans-serif;;
+        font-family: 'Poppins', sans-serif;
     }
     img{
     width: 90%;
     border-radius: 10px;
 }
 `
-const Power = styled.h2`
-    color: #2B39AF;
+const For = styled.h3`
+    color:  #FB5607;
+`
+const WhiteTextLeft = styled.div`
+   color: white;
+   font-size: 22px;
+   font-family: 'Poppins', sans-serif;;
+   text-align: left;
 `
 const WhiteText = styled.div`
    color: white;
-   font-size: 24px;
+   font-size: 22px;
    font-family: 'Poppins', sans-serif;;
    text-align: center;
 `
@@ -107,6 +113,7 @@ const OrangeText = styled.div`
    color: #FB5607;
    font-size: 48px;
    font-family: 'Poppins', sans-serif;
+   font-weight: bold;
    text-align: center;
 `
 const BackgroundImage = styled.div`
@@ -129,19 +136,26 @@ const PaddingText = styled.div`
 `
 const MerchyLogo = styled.img`
 
-max-width: 20%;
-padding-right: 3px;
-margin: auto;
+max-width: 24%;
+
+margin: 15px;
 `
-const MerchantText = styled.h1`
+const MerchantText = styled.div`
    color: #fff;
-   font-size: 52px;
+   font-size: 108px;
    font-family: 'Poppins';
-   text-align: center;
+   font-weight: bold;
+   text-align: left;
+   
+   
+   
 `
 const Row = styled.div`
     display: flex;
     justify-content: left;
+
+   
+    
     @media screen and (max-width: 480px) {
         display: flex;
         flex-direction: column;
@@ -151,7 +165,17 @@ const SmallWhiteText = styled.div`
 color: white;
 font-size: 16px;
 font-family: 'Poppins', sans-serif;;
+text-align: left;
+`
+const SmallOrangeText = styled.div`
+   color: #FB5607;
+   font-size: 22px;
+   font-family: 'Poppins', sans-serif;
+   text-align: center;
+`
+const ButtonCenter = styled.div`
 text-align: center;
+
 `
 function Merchant() {
     return (
@@ -162,10 +186,11 @@ function Merchant() {
                 <BackgroundImage><ContentCon>
                     <ContentR>
                         <Row><MerchyLogo src="/assets/Logo White text.png"></MerchyLogo>
-                            <OrangeText>for</OrangeText></Row>
+                            <For>for</For></Row>
                         <MerchantText>Merchant</MerchantText>
-                        <WhiteText>Support beginning of living with sustainablity and grow together.</WhiteText>
-                        <OrangeText>Are comming soon!</OrangeText>
+                        <WhiteTextLeft>Support beginning of living with sustainablity and</WhiteTextLeft>
+                        <Row><WhiteText>grow together.</WhiteText>
+                            <SmallOrangeText>Are coming soon!</SmallOrangeText></Row>
 
                         <BannerBtn>Pre-register!</BannerBtn>
                         <JoinDiscordBtn>Join our Discord!</JoinDiscordBtn>
@@ -182,7 +207,7 @@ function Merchant() {
                 <OpenAreaMarketBG><ContentCon>
                     <ContentR>
                         <Row><MerchyLogo src="/assets/Logo White text.png"></MerchyLogo>
-                            <OrangeText>for</OrangeText></Row>
+                            <For>for</For></Row>
                         <MerchantText>Merchant</MerchantText>
 
 
@@ -190,7 +215,9 @@ function Merchant() {
                     <ContentL>
                         <SmallWhiteText>A wallet and platform to connect with Merchy to help local shop in the local area through quests, events, and ranking then earn the cryptocurrency for using by be our partners. You can be our partner easily! Just pre-register with us.</SmallWhiteText>
                     </ContentL>
-                </ContentCon><BannerBtn>Pre-register!</BannerBtn>
+
+                </ContentCon>
+                    <ButtonCenter><BannerBtn>Pre-register!</BannerBtn></ButtonCenter>
                 </OpenAreaMarketBG>
 
             </DarkBackground>
