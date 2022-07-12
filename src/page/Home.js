@@ -131,8 +131,11 @@ const ContentR = styled.div`
     border-radius: 10px;
 }
 `
-const Power = styled.h2`
-    color: #2B39AF;
+const Power = styled.div`
+    font-family: 'Poppins', sans-serif;
+    color: #FB5607;
+    margin-left: 210px;
+    margin-top: 24px;
 `
 
 const JoinDiscordBtn = styled.a`
@@ -201,7 +204,7 @@ const BackgroundImage = styled.div`
 const NotdoneImage = styled.div`
    background-image: url("/assets/tim-mossholder-ZHfFvW2u93U-unsplash.jpg");
    background-repeat: no-repeat;
-    
+   
   background-size: cover;
   border-radius: 30px;
   margin: 100px;
@@ -212,15 +215,26 @@ const NotdoneImage = styled.div`
 `
 const WhiteText = styled.div`
    color: white;
-   font-size: 24px;
+   font-size: 16px;
    font-family: 'Poppins', sans-serif;
    text-align: center;
+   margin-left: 210px;
 `
-const OrangeText = styled.div`
-   color: #FB5607;
-   font-size: 48px;
+const LearnMore = styled.div`
+   color: white;
+   font-size: 14px;
    font-family: 'Poppins', sans-serif;
-   text-align: left;
+   text-align: right;
+   margin-right: 12px;
+   padding: 16px;
+  
+`
+const Merchant = styled.div`
+   color: white;
+   font-size: 72px;
+   font-weight: bold;
+   font-family: 'Poppins', sans-serif;
+   text-align: center;
  
 `
 const BlackText = styled.h2`
@@ -332,10 +346,10 @@ function Home() {
             </Container>
             <Image src="\assets\Roadmap.png"></Image>
             <Container>
-                <NotdoneImage><PaddingText><OrangeText>We're not done yet...</OrangeText>
-                    <WhiteText>Merchant</WhiteText>
-                    <WhiteText>is coming soon</WhiteText></PaddingText>
-                    <WhiteText>Learn more! {'>'}</WhiteText></NotdoneImage>
+                <NotdoneImage><PaddingText><Power>We're not done yet...</Power>
+                    <Merchant>Merchant</Merchant>
+                    <WhiteText>are coming soon!</WhiteText></PaddingText>
+                    <LearnMore>Learn more! {'>'}</LearnMore></NotdoneImage>
 
             </Container>
 
