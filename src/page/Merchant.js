@@ -8,10 +8,6 @@ const Container = styled.div`
     margin: 0 auto;
     justify-content: center;
 `
-const Image = styled.img`
-  
-  width: 100%;
-`;
 const DarkBackground = styled.div`
     background-color: #0f0f0f;
 `
@@ -153,6 +149,7 @@ const MerchantText = styled.div`
 const Row = styled.div`
     display: flex;
     justify-content: left;
+    text-align: left;
 
    
     
