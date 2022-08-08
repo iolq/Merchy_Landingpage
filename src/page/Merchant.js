@@ -48,11 +48,31 @@ const BannerBtn = styled.a`
 const ContentCon = styled.section`
     display: flex;
     justify-content: space-between;
+   
+    
     &:first-child{
-        padding: 5rem 0;
+        padding: 9rem 0;
     }
     &:last-child{
-        padding: 5rem 0;
+        padding: 9rem 0;
+    }
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+    &:nth-child(2) {
+        order: 1;
+    }
+  }
+`
+const ContentCon2 = styled.section`
+    display: flex;
+    justify-content: space-between;
+   
+    
+    &:first-child{
+        padding: 1px 0;
+    }
+    &:last-child{
+        padding: 1px 0;
     }
     @media screen and (max-width: 480px) {
         flex-direction: column;
@@ -77,7 +97,7 @@ img{
 `
 
 const ContentR = styled.div`
-    padding: 10rem ;
+    padding: 10% ;
     text-align: center;
     justify-content: center;
     width: 85%;
@@ -163,6 +183,7 @@ color: white;
 font-size: 16px;
 font-family: 'Poppins', sans-serif;;
 text-align: left;
+padding-top: 40%;
 `
 const SmallOrangeText = styled.div`
    color: #FB5607;
@@ -172,6 +193,8 @@ const SmallOrangeText = styled.div`
 `
 const ButtonCenter = styled.div`
 text-align: center;
+padding-bottom: 100px;
+
 
 `
 function Merchant() {
@@ -201,7 +224,7 @@ function Merchant() {
                     <OrangeText>Merchant?</OrangeText></PaddingText>
                 </Container>
 
-                <OpenAreaMarketBG><ContentCon>
+                <OpenAreaMarketBG><ContentCon2>
                     <ContentR>
                         <Row><MerchyLogo src="/assets/Logo White text.png"></MerchyLogo>
                             <For>for</For></Row>
@@ -213,7 +236,7 @@ function Merchant() {
                         <SmallWhiteText>A wallet and platform to connect with Merchy to help local shop in the local area through quests, events, and ranking then earn the cryptocurrency for using by be our partners. You can be our partner easily! Just pre-register with us.</SmallWhiteText>
                     </ContentL>
 
-                </ContentCon>
+                </ContentCon2>
                     <ButtonCenter><BannerBtn>Pre-register!</BannerBtn></ButtonCenter>
                 </OpenAreaMarketBG>
 

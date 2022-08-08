@@ -39,7 +39,7 @@ const FooterCol = styled.div`
 	font-size: 18px;
 	color: #ffffff;
 	text-transform: capitalize;
-	/* margin-bottom: 35px; */
+	margin-bottom: 35px;
 	font-weight: 1000;
    }
     h4::before{
@@ -150,7 +150,7 @@ const Footer = () => {
                             <Col>
                                 <FooterMiddleColumn> <p><a>What can we do?</a></p></FooterMiddleColumn>
                                 <FooterMiddleColumn><p><a>Partners</a></p></FooterMiddleColumn>
-                                <FooterMiddleColumn><p><a href="\page\Merchant"></a>Merchant</p></FooterMiddleColumn>
+                                <FooterMiddleColumn><p><a href="\Merchant"></a>Merchant</p></FooterMiddleColumn>
 
 
                             </Col>
