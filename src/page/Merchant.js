@@ -86,12 +86,12 @@ padding: 1rem ;
 align-items: center;
 justify-content: center;
 text-align: center;
-width: 85%;
+width: 105%;
     h1, h2{
         font-family: 'Poppins', sans-serif;
     }
 img{
-    width: 100%;
+    width: 120%;
     border-radius: 10px;
 }
 `
@@ -100,7 +100,7 @@ const ContentR = styled.div`
     padding: 10% ;
     text-align: center;
     justify-content: center;
-    width: 85%;
+    width: 100%;
     font-family: 'Poppins', sans-serif;
     h1, h2{
         font-family: 'Poppins', sans-serif;
@@ -154,7 +154,9 @@ const MerchyLogo = styled.img`
 
 max-width: 24%;
 
-margin: 15px;
+/* margin: 18px; */
+padding: 18px;
+padding-right: 10px;
 `
 const MerchantText = styled.div`
    color: #fff;
@@ -180,10 +182,11 @@ const Row = styled.div`
 `
 const SmallWhiteText = styled.div`
 color: white;
-font-size: 16px;
+font-size: 15px;
+
 font-family: 'Poppins', sans-serif;;
 text-align: left;
-padding-top: 40%;
+padding-top: 37%;
 `
 const SmallOrangeText = styled.div`
    color: #FB5607;
