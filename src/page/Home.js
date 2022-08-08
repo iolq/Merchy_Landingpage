@@ -104,10 +104,10 @@ const ContentCon = styled.section`
 
 const ContentL = styled.div`
 
-align-items: center;
+align-items: right;
 justify-content: center;
 text-align: center;
-width: 85%;
+width: 55%;
     h1, h2{
         font-family: 'Poppins', sans-serif;;
     }
@@ -119,9 +119,9 @@ img{
 
 const ContentR = styled.div`
     
-    text-align: center;
-    justify-content: center;
-    width: 85%;
+    text-align: left;
+    justify-content: left;
+    width: 100%;
     font-family: 'Poppins', sans-serif;;
     h1, h2{
         font-family: 'Poppins', sans-serif;;
@@ -237,37 +237,51 @@ const Merchant = styled.div`
    text-align: center;
  
 `
-const BlackText = styled.h2`
+const BlackText = styled.span`
    color: #0f0f0f;
-   font-size: 20px;
+   font-size: 28px;
    font-family: 'Poppins';
-   text-align: center;
-`
-const Beginning = styled.h1`
-   color: #0f0f0f;
-   font-size: 52px;
-   font-family: 'Poppins';
-   text-align: center;
-`
-const Living = styled.h1`
-   color: #FB5607;
-   font-size: 52px;
-   font-family: 'Poppins';
+   font-weight: bold;
    text-align: left;
 `
-const MerchyText = styled.h2`
-   color: #fb5607;
-   font-size: 20px;
+const Beginning = styled.span`
+   color: #0f0f0f;
+   font-size: 58px;
+   font-weight: bold;
    font-family: 'Poppins';
    text-align: center;
-   margin-left: 3px;
-   margin-right: 3px;
+`
+const Living = styled.span`
+   color: #FB5607;
+   font-size: 58px;
+   font-weight: bold;
+   font-family: 'Poppins';
+   text-align: left;
+   
+`
+const MerchyText = styled.span`
+   color: #fb5607;
+   font-size: 28px;
+   font-family: 'Poppins';
+   font-weight: bold;
+   text-align: left;
+ 
 `
 const Text = styled.div`
    color: #575757;
-   font-size: 18px;
+   font-size: 25px;
    font-family: 'Poppins';
    text-align: left;
+   padding-top:25px ;
+   padding-bottom: 25px;
+`
+const Text1 = styled.div`
+   color: #575757;
+   font-size: 19px;
+   font-family: 'Poppins';
+   text-align: left;
+   padding-top:25px ;
+   padding-bottom: 25px;
 `
 
 const PaddingText = styled.div`
@@ -286,8 +300,8 @@ function Home() {
                 <Container>
                     <ContentCon>
                         <ContentR>
-                            <Row><Beginning>Beginning of</Beginning><Living>living</Living></Row>
-                            <Living> with sustainablity.</Living>
+                            <Beginning>Beginning of </Beginning>
+                            <Living>living with sustainablity.</Living>
                             <Text>We believe that everbody has a potential to make this world better.</Text>
 
 
@@ -309,10 +323,10 @@ function Home() {
 
                     <PaddingText>
 
-                        <Row><BlackText>What is</BlackText><MerchyText>Merchy</MerchyText><BlackText>?</BlackText></Row>
-                        <Text>Getto is a startup, founded by passionate university students.
+                        <BlackText>What is</BlackText><MerchyText>Merchy</MerchyText><BlackText>?</BlackText>
+                        <Text1>Getto is a startup, founded by passionate university students.
                             We are aiming to help local businesses and environmental issues,
-                            therefore every product from us must contain these.</Text></PaddingText>
+                            therefore every product from us must contain these.</Text1></PaddingText>
 
 
 
